@@ -144,7 +144,8 @@ resource "aws_eip" "web" {
   domain = "vpc"
 
   tags = {
-    Name = "${var.project_name}-eip"
+    Name     = "${var.project_name}-eip"
+    Training = "ShopEasy-DevOps-Lab"
   }
 
   # Make sure the internet gateway exists before creating the EIP
